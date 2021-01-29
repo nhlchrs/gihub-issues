@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-header{
+  background-color: #20232A;
+     z-index: 32;
+    display: flex;
+    padding: 16px;
+    font-size: 14px;
+    line-height: 1.5;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 52px !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar-item{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-left: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-text{
+  margin-left: 30px;
+  width: 100%;
+  color: inherit;
+  background: none;
+  border: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.nav-text{
+    background:#20232A;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+.sub-navbar{
+  padding: 50px;
+}
+button{
+  padding: 6px;
+}
+.btn-val{
+  border:1px solid black
+}
+
+.issue-name{
+  padding-top:50px;
+  padding-bottom: 50px;
+}
+
+.show {
+  display: block;
+  display: initial;
+}
+
+.hide{
+  display: none;
+}
+.card{
+  cursor: pointer;
 }
