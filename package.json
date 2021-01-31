@@ -8,8 +8,11 @@
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
+    "glyphicons": "^0.2.0",
+    "netlify-cli": "^3.4.6",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.3",
+    "react-component-octicons": "^1.8.0",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
     "web-vitals": "^0.2.4"

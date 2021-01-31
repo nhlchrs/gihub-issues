@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import axios from 'axios'
+
 import Accordion from 'react-bootstrap/Accordion'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
@@ -9,7 +10,7 @@ function Issuelist({name}) {
     const [show, setShow] = useState(true)
     const [inputVal, setinput]=useState('');
     const [comments, setComments]= useState([])
-    const [post, postData] = useState('')
+    // const [post, postData] = useState('')
     useEffect(() => {
         const config = {
             headers: { Authorization: "token 5df257c7eadd1ce90705217f1e4c40cd8dd61c96" }
@@ -24,13 +25,6 @@ function Issuelist({name}) {
       setShow(false)
     }
     console.log(show)
-  },[data]);
-
-  axios.get(`https://api.github.com/repos/nhlchrs/${name}/issues/comments`,config)
-  .then((response) => {
-    // setData(response.data);
-    setComments(response.data)
-    console.log(comments)
   });
 
     },[name])

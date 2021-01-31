@@ -13,6 +13,10 @@
     flex-wrap: nowrap;
     height: 52px !important;
 }
+.issue-name{
+  background-color: #FAFBFC !important;
+
+}
 
 .navbar-item{
   display: flex;
@@ -34,28 +38,103 @@
   }
 
 .sub-navbar{
-  padding: 50px;
+  background-color: #FAFBFC !important;
+  padding: 20px;
 }
-button{
-  padding: 6px;
+
+.child-subnavbar{
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+}
+.subnavbar-button{
+  position: Absolute;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  top: 65px; 
+  right : 10px; 
+}
+
+.btn-icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .btn-val{
-  border:1px solid black
+  border:1px solid black;
+  padding: 4px;
+  background-color: white;
 }
-
-.issue-name{
-  padding-top:50px;
-  padding-bottom: 50px;
+.btn-sm > span{
+  margin-top: 12px;
 }
-
-.show {
-  display: block;
-  display: initial;
+.heading-one{
+  color: #0366d8;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 20px !important;
 }
-
-.hide{
-  display: none;
+.heading-two{
+  font-weight: 600;
 }
 .card{
   cursor: pointer;
+}
+.btn-secondary{
+  width: 80px !important;
+  background-color: #FAFBFC !important;
+  color: black !important;
+  border-top-right-radius: 0px !important ;
+  border-bottom-right-radius: 0px !important ;
+  border: 1px solid darkgray !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.btn-default{
+  border-top-left-radius: 0px !important ;
+  border-bottom-left-radius: 0px !important ;
+  border-right: 1px solid darkgray !important;
+  border-top: 1px solid darkgray !important;
+  border-bottom: 1px solid darkgray !important;
+
+}
+.btn-default:hover{
+  color:#0366d8 !important ;
+  font-weight: 400 !important;
+}
+.btn-secondary:hover{
+  background-color: #F3F4F6 !important;
+}
+.table-style{
+  padding: 40px;
+}
+.octicon-icon{
+  margin-top: 3px;
+  font-size: 24px !important;
+  color: #959DA5 !important;
+}
+.btn-octicon-icon{
+  margin-top: 2px;
+  font-size: 14px;
+  color: #959DA5 !important;
+}
+
+.nav-link:hover{
+  border-bottom: 2px solid #959DA5;
+  cursor: pointer;
+}
+
+.nav-item{
+  margin-left: 15px;
+}
+
+.nav-link:active{
+  border-bottom: 2px solid #F9826C;
+}
+.active{
+  border-bottom: 2px solid #F9826C;
+
 }
