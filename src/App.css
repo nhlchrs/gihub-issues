@@ -17,7 +17,52 @@
   background-color: #FAFBFC !important;
 
 }
-
+.issues-list{
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid darkgrey;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 80%;
+  margin-left: 10%;
+  padding: 20px;
+  background-color: #F6F8FA;
+}
+.octicon-icon-green{
+  color: #2F8D46;
+  margin-top: 2px;
+}
+.issues-list-first{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.comments-right{
+  position:absolute; 
+  right: 210px;
+  display: inline;
+  align-items: center;
+}
+.issue-title{
+  display: flex;
+  justify-content: flex-start;
+  border:1px solid darkgray;
+  padding: 20px;
+  width: 80%;
+  margin-left: 10%;
+  border-bottom-color: darkgrey;
+}
+.issues-list-second > div{
+  display: inline-flex;
+  align-items: flex-end;
+  margin-left: 10px;
+  margin-right: 20px;
+  justify-content: space-evenly;
+  right: 0;
+  float: right;
+}
 .navbar-item{
   display: flex;
   align-items: center;
@@ -34,12 +79,18 @@
 }
 
 .nav-text{
-    background:#20232A;
-  }
+  background:#20232A;
+}
 
 .sub-navbar{
   background-color: #FAFBFC !important;
   padding: 20px;
+}
+
+.comments-name{
+  color: lightgray;
+  font-size: 15px;
+  margin-bottom: 2px;
 }
 
 .child-subnavbar{
@@ -47,6 +98,7 @@
   display: flex;
   align-items: center;
 }
+
 .subnavbar-button{
   position: Absolute;
   display: flex;
@@ -137,4 +189,8 @@
 .active{
   border-bottom: 2px solid #F9826C;
 
+}
+.issue-title:hover{
+  cursor: pointer;
+  background-color: #F6F8FA;
 }

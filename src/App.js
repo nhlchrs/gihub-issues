@@ -9,7 +9,7 @@ function App() {
     <div className="App">
         <Navbar/>
         <Subnavbar/>
-        <IssueFilter/>
+        <IssueFilter/><br/><br/>
         <ReposList/>
     </div>
   );

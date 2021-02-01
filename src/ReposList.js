@@ -32,37 +32,29 @@ function ReposList() {
     }
 
     return (
-        <div >
-        <table className="table table-style">
-  <thead>
-    <tr>
-      <th scope="col">221 Open</th>
-      <th scope="col">300 Closed</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th scope="col">Author&nbsp;<Octicon name="chevron-down" className="octicon-icon"/></th>
-      <th scope="col">Label&nbsp;<Octicon name="chevron-down" className="octicon-icon"/></th>
-      <th scope="col">Projects&nbsp;<Octicon name="chevron-down" className="octicon-icon"/></th>
-      <th scope="col">Milestones&nbsp;<Octicon name="chevron-down" className="octicon-icon"/></th>
-      <th scope="col">Assignee&nbsp;<Octicon name="chevron-down" className="octicon-icon"/></th>
-      <th scope="col">Sort&nbsp;<Octicon name="chevron-down" className="octicon-icon"/></th>
-    </tr>
-  </thead>
-  <tbody>
-    
+        <div>
+        <div className="issues-list">
+            <div className="issues-list-first">
+                <div><strong><Octicon name="issue-opened" className="octicon-icon"/> 207 Open</strong> </div>&nbsp;&nbsp;
+                <div><Octicon name="check" className="octicon-icon"/> 12 Closed </div>
+            </div>
+            <div className="issues-list-second">
+                <div> Author <Octicon name="chevron-down" className="octicon-icon"/></div>
+                <div> Label <Octicon name="chevron-down" className="octicon-icon"/></div>
+                <div>Projects <Octicon name="chevron-down" className="octicon-icon"/></div>
+                <div>Milestones <Octicon name="chevron-down" className="octicon-icon"/></div>
+                <div>Assignee <Octicon name="chevron-down" className="octicon-icon"/></div>
+                <div> Sort <Octicon name="chevron-down" className="octicon-icon"/></div>
+            </div>
+            </div> 
     {repo.map((val,index)=>(
         <>
-        <tr>
-        <td key={index}>{val.title}</td>
-        </tr>
+        <div className="issue-title" key={index}>
+            <Octicon name="issue-opened" className="octicon-icon-green"/>&nbsp;{val.title} 
+           <div className="comments-right"><Octicon name="comment" /><span className="comments-name">{val.comments}</span></div>
+        </div>
         </>
     ))}
-</tbody></table>
            <Issuelist name={repoName}/>
         </div> 
     )
