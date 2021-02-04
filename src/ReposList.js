@@ -37,7 +37,7 @@ function ReposList() {
            {/* <div className="comments-right" onClick={(e)=>addComments(val.id,e)}>{comments.map((value,index)=>{
             <div key={index}>{value.body}</div>
            })} */}
-           <div className="main-comment"><Octicon name="comment"/><span className="comments-name"> {val.comments}</span></div>
+           <div className="comments-right main-comment"><Octicon name="comment"/><span className="comments-name"> {val.comments}</span></div>
            {/* </div> */}
         </div>
         </>
