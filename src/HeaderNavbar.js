@@ -18,15 +18,15 @@ function HeaderNavbar() {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link href="#features">Pull requests</Nav.Link>
-          <Nav.Link href="#pricing">Issues</Nav.Link>
-          <Nav.Link href="#deets">Marketplace</Nav.Link>
-          <Nav.Link href="#deets">Explore</Nav.Link>
+          <Nav.Link>Pull requests</Nav.Link>
+          <Nav.Link>Issues</Nav.Link>
+          <Nav.Link>Marketplace</Nav.Link>
+          <Nav.Link>Explore</Nav.Link>
         </Nav>
         <Nav>
-          <Nav.Link href="#deets"><Octicon name="bell" className="octicon-icon"/></Nav.Link>
-          <Nav.Link href="#deets"><Octicon name="plus" className="octicon-icon"/><span className= "caret"></span></Nav.Link>
-          <Nav.Link href="#deets">
+          <Nav.Link><Octicon name="bell" className="octicon-icon"/></Nav.Link>
+          <Nav.Link><Octicon name="plus" className="octicon-icon"/><span className= "caret"></span></Nav.Link>
+          <Nav.Link>
           <Avatar twitterHandle="sitebase" size="30" round="20px" />
           </Nav.Link>
 
