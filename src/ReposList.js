@@ -1,13 +1,10 @@
 import React, {useEffect, useState} from 'react'
 import axios from "axios";
-import Issuelist from './Issuelist';
 import Octicon from 'react-component-octicons';
 
 function ReposList() {
     const [repo, setRepo] = useState([]);
-    const [data, setData] = useState(true)
-    const [repoName, setReponame]= useState('');
-    const [comments, setComments]=useState([]);
+    const [data] = useState(true)
     useEffect(()=>{
         if(data===true){
         axios.get('https://api.github.com/repos/octocat/hello-world/issues').then((res)=>{
@@ -15,19 +12,8 @@ function ReposList() {
             setRepo(res.data);
         })
     }
-    },[data,repoName])
+    },[data])
 
-    const handleClick=(index)=>{
-        // e.preventDefault();
-        console.log(index)
-        setData(false)
-        setReponame(index)
-    }
-
-    const addComments=(index,e)=>{
-        e.preventDefault();
-        alert(index);
-    }
     return (
         <div>
         <div className="issues-list">
@@ -48,15 +34,14 @@ function ReposList() {
         <>
         <div className="issue-title" key={index}>
             <Octicon name="issue-opened" className="octicon-icon-green"/>&nbsp;{val.title} 
-           <div className="comments-right" onClick={(e)=>addComments(val.id,e)}>{comments.map((value,index)=>{
+           {/* <div className="comments-right" onClick={(e)=>addComments(val.id,e)}>{comments.map((value,index)=>{
             <div key={index}>{value.body}</div>
-           })}
+           })} */}
            <div className="main-comment"><Octicon name="comment"/><span className="comments-name"> {val.comments}</span></div>
-           </div>
+           {/* </div> */}
         </div>
         </>
     ))}
-        <Issuelist name={repoName}/>
         </div> 
     )
 }
