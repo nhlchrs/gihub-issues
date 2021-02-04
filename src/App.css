@@ -18,10 +18,9 @@
 
 }
 .issues-list{
-  
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-around;
   border: 1px solid darkgrey;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -30,15 +29,42 @@
   padding: 20px;
   background-color: #F6F8FA;
 }
+
+.issues-list>div:hover{
+  cursor: pointer;
+  color: lightgray;
+}
 .octicon-icon-green{
   color: #2F8D46;
   margin-top: 2px;
 }
-.issues-list-first{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+.nav-icon{
+  color: gray;
 }
+.navbar-dark .navbar-nav .nav-link{
+  color: white !important;
+  font-size: 14px !important;
+  font-weight: 600;
+}
+.navbar-dark:hover .navbar-nav:hover .nav-link:hover{
+  color: lightgray !important;
+  border: none;
+}
+.main-comment{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position:relative;
+  margin-right:-4em;
+}
+.main-comment:hover{
+  color: #0366d8;
+  font-weight: 800;
+}
+/* .issues-list-first{
+  display: flex;
+  justify-content: space-around;
+} */
 .comments-right{
   position:absolute; 
   right: 210px;
@@ -54,15 +80,11 @@
   margin-left: 10%;
   border-bottom-color: darkgrey;
 }
-.issues-list-second > div{
-  display: inline-flex;
-  align-items: flex-end;
-  margin-left: 10px;
-  margin-right: 20px;
-  justify-content: space-evenly;
-  right: 0;
-  float: right;
-}
+/* .issues-list-second{
+  display:flex;
+  align-content: flex-end;
+  justify-content: space-around;
+} */
 .navbar-item{
   display: flex;
   align-items: center;
@@ -88,8 +110,9 @@
 }
 
 .comments-name{
-  color: lightgray;
-  font-size: 15px;
+  color: darkgray;
+  font-size: 12px;
+  padding: 2px;
   margin-bottom: 2px;
 }
 
@@ -112,6 +135,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  margin-top: 20px;
 }
 .btn-val{
   border:1px solid black;
@@ -193,4 +218,31 @@
 .issue-title:hover{
   cursor: pointer;
   background-color: #F6F8FA;
+}
+
+input.search-box {
+  background-color:#343A40;
+  color:white;
+  border: 1px solid grey;
+  border-radius: 5px;
+  /* height: 25px; */
+  width: 200px;
+  padding: 2px 23px 2px 12px;
+  outline: 0;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: lightgray;
+  opacity: 1; /* Firefox */
+  font-size: 14px;
+}
+
+input[type=text]:focus{
+  background-color: white;
+  width: 40%;
+  color: black;
+  transition: width .5s;
+}
+input:focus::-webkit-input-placeholder {
+  color: black;
 }

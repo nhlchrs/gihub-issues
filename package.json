@@ -11,6 +11,7 @@
     "glyphicons": "^0.2.0",
     "netlify-cli": "^3.4.6",
     "react": "^17.0.1",
+    "react-avatar": "^3.9.7",
     "react-bootstrap": "^1.4.3",
     "react-component-octicons": "^1.8.0",
     "react-dom": "^17.0.1",

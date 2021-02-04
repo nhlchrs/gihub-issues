@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './Navbar';
+import HeaderNavbar from './HeaderNavbar';
 import './App.css'
 import ReposList from './ReposList';
 import IssueFilter from './IssueFilter';
@@ -7,7 +7,7 @@ import Subnavbar from './Subnavbar';
 function App() {
   return (
     <div className="App">
-        <Navbar/>
+        <HeaderNavbar/>
         <Subnavbar/>
         <IssueFilter/><br/><br/>
         <ReposList/>
